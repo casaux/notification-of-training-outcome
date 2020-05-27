@@ -81,8 +81,8 @@
 					<h4>Student details</h4>
 <p><strong>Name:</strong> Clare White<br>
 <strong>ARN:</strong> 1736904<br>
-<strong>Course code:</strong> AA06<br>
-<strong>Course type identified:</strong> Category                    </p>
+<strong>Course code:</strong> AA30P<br>
+<strong>Course type identified:</strong> Practical                    </p>
 					</div>
 
                 <!--<p>More general information</p>-->
@@ -135,27 +135,37 @@
                     <div class="au-form-group removal-no casa-hidden">     
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
-                            <h3 class="au-display-sm">Optional units of competency</h3>
+                            <h3 class="au-display-sm">Practical experience/on the job training (OJT)</h3>
                         </legend>
 
                         <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="fab-checkbox-block" value="">
-                                <label class="au-control-input__text" for="fab-checkbox-block">Fabric surfaces</label>
+                            <input class="au-control-input__input" type="radio" name="radio-ex-1" id="pct-radio-block" value="">
+                                <label class="au-control-input__text" for="pct-radio-block">Practical consolidation training (PCT)</label>
                         </div>
                         
                         <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="wood-checkbox-block" value="">
-                                <label class="au-control-input__text" for="wood-checkbox-block">Wooden structures</label>
+                            <input class="au-control-input__input" type="radio" name="radio-ex-1" id="poc-radio-block" value="">
+                                <label class="au-control-input__text" for="poc-radio-block">Practical on course training (POC)</label>
                         </div>
-                
-                    
+                        
+                         <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex-1" id="25-ojt-radio-block" value="">
+                                <label class="au-control-input__text" for="25-ojt-radio-block">25% of additional tasks in <abbr title="on the job training">OJT</abbr> journal</label>
+                        </div>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex-1" id="100-ojt-radio-block" value="">
+                                <label class="au-control-input__text" for="100-ojt-radio-block">100% of additional tasks in <abbr title="on the job training">OJT</abbr> journal</label>
+                        </div>
+
+                        
                     </fieldset>
                     </div> 
                     
                     <div class="au-form-group casa-inline-form-group removal-no casa-hidden">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
-                                <h3 class="au-display-sm">Date competency requirements were met</h3>
+                                <h3 class="au-display-sm">Date practical requirements were met</h3>
                                 <span class="au-hint-text">For example, 31 01 2020</span>
                             </legend>
                             <div class="au-form-group casa-inline-form-subgroup">
@@ -175,15 +185,39 @@
                         </fieldset>
                     </div>
                     
-                                    <div class="au-callout removal-no casa-hidden">					
-					<h4>Practical maintenance experience</h4>
-<p>This student has completed <strong>3 years</strong> of experience on operating aircraft in <strong>B1.2</strong> subcategory (if initial licence, <strong>1 year</strong> has been accumulated immediately before making application)</p>
-					</div>
+                <!-- form group for radio/checkboxes -->
+
+   <div class="au-form-group removal-no casa-hidden">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Did this student also complete a theory course?</h3>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex-2" id="theory-yes-radio-block" value="t-yes">
+                                <label class="au-control-input__text" for="theory-yes-radio-block">Yes</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex-2" id="theory-no-radio-block" value="t-no">
+                                <label class="au-control-input__text" for="theory-no-radio-block">No</label>
+                        </div>
+
+
+                        
+                    </fieldset>
+                    </div> 
                     
-                       <div class="au-form-group casa-inline-form-group removal-no casa-hidden">
+                    
+                    <div class="au-form-group theory-yes casa-hidden">
+                    <label class="au-label" for="course-code">Theory course code</label>
+                    <input type="text" class="au-text-input au-text-input--block" id="course-code">
+                 </div>
+                    
+                    <div class="au-form-group casa-inline-form-group theory-yes casa-hidden">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
-                                <h3 class="au-display-sm">Date practical maintenance experience requirements were met</h3>
+                                <h3 class="au-display-sm">Date theory requirements were met</h3>
                                 <span class="au-hint-text">For example, 31 01 2020</span>
                             </legend>
                             <div class="au-form-group casa-inline-form-subgroup">
@@ -201,11 +235,9 @@
 
 
                         </fieldset>
-                    </div>                 
+                    </div>
                     
-
-                    
-<div class="au-form-group removal-no casa-hidden">     
+<div class="au-form-group theory-yes casa-hidden">     
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
                             <h3 class="au-display-sm">Is this report based on an Recognition of Prior Learning assesment of the students qualifications?</h3>
@@ -283,7 +315,7 @@
                 <!-- standard next button -->
 
    				      <div class="au-form-group">
-   				           <a class="au-btn" href="student-added-cat.html">Save student</a>
+   				           <a class="au-btn" href="student-added-prac.html">Save student</a>
 	              </div>
 
 
