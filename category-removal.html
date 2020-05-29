@@ -81,14 +81,13 @@
 					<h4>Student details</h4>
 <p><strong>Name:</strong> Clare White<br>
 <strong>ARN:</strong> 1736904<br>
-<strong>Course code:</strong> AA06<br>
-<strong>Course type identified:</strong> B1.2, category training</p>
+<strong>Removal of exclusion:</strong> Category</p>
 					</div>
 
                 <!--<p>More general information</p>-->
-<h3>Course details</h3>
+<h3>Category removal details</h3>
 
-                                                           <!-- <div class="au-form-group">
+                                                            <!--<div class="au-form-group">
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
                           <h3 class="au-display-sm">Is this a notification for a removal of exclusions/limitations?</h3>
@@ -135,32 +134,45 @@
                     <div class="au-form-group">     
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
-                            <h3 class="au-display-sm">Optional units of competency</h3>
+                            <h3 class="au-display-sm">Please select the categories to be removed from exclusion</h3>
+                            <span class="au-hint-text">You may select more than one</span>
                         </legend>
 
                         <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="fab-checkbox-block" value="">
-                                <label class="au-control-input__text" for="fab-checkbox-block">Fabric surfaces</label>
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="b1.1-checkbox-block" value="">
+                                <label class="au-control-input__text" for="b1.1-checkbox-block">B1.1</label>
                         </div>
                         
                         <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="wood-checkbox-block" value="">
-                                <label class="au-control-input__text" for="wood-checkbox-block">Wooden structures</label>
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="b1.2-checkbox-block" value="">
+                                <label class="au-control-input__text" for="b1.2-checkbox-block">B1.2</label>
                         </div>
                         
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="wood-checkbox-block" value="">
-                                <label class="au-control-input__text" for="wood-checkbox-block">Propellers</label>
+                         <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="b1.3-checkbox-block" value="">
+                                <label class="au-control-input__text" for="b1.3-checkbox-block">B1.3</label>
                         </div>
-                
-                    
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="b2-checkbox-block" value="">
+                                <label class="au-control-input__text" for="b2-checkbox-block">B2</label>
+                        </div>
+
+                        
                     </fieldset>
                     </div> 
                     
                     <div class="au-form-group">
+                    <label class="au-label">Please enter the exclusion/limitation codes </label>
+                        <span class="au-hint-text">e.g. E1, E2</span>
+                            <textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+                            </textarea>
+                    </div>
+                    
+                    <div class="au-form-group">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
-                                <h3 class="au-display-sm">Date competency requirements were met</h3>
+                                <h3 class="au-display-sm">Date requirements were met</h3>
                                 <span class="au-hint-text">For example, 31 01 2020</span>
                             </legend>
                             <div class="au-form-group casa-inline-form-subgroup">
@@ -180,15 +192,39 @@
                         </fieldset>
                     </div>
                     
-                                    <div class="au-callout removal-no casa-hidden">					
-					<h4>Practical maintenance experience</h4>
-<p>This student has completed <strong>3 years</strong> of experience on operating aircraft in <strong>B1.2</strong> subcategory (if initial licence, <strong>1 year</strong> has been accumulated immediately before making application)</p>
-					</div>
+                <!-- form group for radio/checkboxes -->
+
+   <!--<div class="au-form-group removal-no casa-hidden">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Did this student also complete a theory course?</h3>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex-2" id="theory-yes-radio-block" value="t-yes">
+                                <label class="au-control-input__text" for="theory-yes-radio-block">Yes</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="radio" name="radio-ex-2" id="theory-no-radio-block" value="t-no">
+                                <label class="au-control-input__text" for="theory-no-radio-block">No</label>
+                        </div>
+
+
+                        
+                    </fieldset>
+                    </div> 
                     
-                       <div class="au-form-group">
+                    
+                    <div class="au-form-group theory-yes casa-hidden">
+                    <label class="au-label" for="course-code">Theory course code</label>
+                    <input type="text" class="au-text-input au-text-input--block" id="course-code">
+                 </div>
+                    
+                    <div class="au-form-group casa-inline-form-group theory-yes casa-hidden">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
-                                <h3 class="au-display-sm">Date practical maintenance experience requirements were met</h3>
+                                <h3 class="au-display-sm">Date theory requirements were met</h3>
                                 <span class="au-hint-text">For example, 31 01 2020</span>
                             </legend>
                             <div class="au-form-group casa-inline-form-subgroup">
@@ -206,9 +242,7 @@
 
 
                         </fieldset>
-                    </div>                 
-                    
-
+                    </div>-->
                     
 <div class="au-form-group">     
                     <fieldset class="au-fieldset">
@@ -288,7 +322,7 @@
                 <!-- standard next button -->
 
    				      <div class="au-form-group">
-   				           <a class="au-btn" href="student-added-cat.html">Save student</a>
+   				           <a class="au-btn" href="student-added-category-removal.html">Save student</a>
 	              </div>
 
 

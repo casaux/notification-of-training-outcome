@@ -77,31 +77,34 @@
                 <!-- the step of the process on this page -->
 
                 
-                <div class="au-callout">					
-					<h4>Student details</h4>
-<p><strong>Name:</strong> Clare White<br>
-<strong>ARN:</strong> 1736904<br>
-<strong>Course code:</strong> AA06<br>
-<strong>Course type identified:</strong> B1.2, category training</p>
-					</div>
 
                 <!--<p>More general information</p>-->
-<h3>Course details</h3>
-
-                                                           <!-- <div class="au-form-group">
+<h3>Student details</h3>
+                    
+                    <div class="au-form-group">
+                    <label class="au-label" for="name">Student family name</label>
+                    <input type="text" class="au-text-input au-text-input--block" id="name">
+                 </div>
+                    
+                    <div class="au-form-group">
+                    <label class="au-label" for="arn">Student aviation reference number</label>
+                    <input type="text" class="au-text-input au-text-input--block" id="arn">
+                 </div>
+                    
+                                        <div class="au-form-group">
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
-                          <h3 class="au-display-sm">Is this a notification for a removal of exclusions/limitations?</h3>
-                          <!-- <span class="au-hint-text">This is some help text</span>
+                          <h3 class="au-display-sm">Removal of exclusion is for</h3>
+                          <!-- <span class="au-hint-text">This is some help text</span>-->
                       </legend>
 
                       <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="removal-yes-radio-block" value="r-yes">
-  <label class="au-control-input__text" for="removal-yes-radio-block">Yes</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="category-radio-block" value="category-removal">
+  <label class="au-control-input__text" for="category-radio-block">Category</label>
 </div>
 <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="radio-ex1" id="removal-no-radio-block" value="r-no">
-  <label class="au-control-input__text" for="removal-no-radio-block">No</label>
+  <input class="au-control-input__input" type="radio" name="radio-ex1" id="type-radio-block" value="type-removal">
+  <label class="au-control-input__text" for="type-radio-block">Type</label>
 </div>
 
 
@@ -109,7 +112,7 @@
                   </fieldset>
                   </div>
                     
-                                                            <div class="au-form-group casa-inline-form-group removal-yes casa-hidden">
+                                      <!--  <div class="au-form-group casa-inline-form-group removal-yes casa-hidden">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
                                 <h3 class="au-display-sm">Date requirements were met</h3>
@@ -130,37 +133,12 @@
 
 
                         </fieldset>
-                    </div>-->
-                    
-                    <div class="au-form-group">     
-                    <fieldset class="au-fieldset">
-                        <legend class="au-fieldset__legend">
-                            <h3 class="au-display-sm">Optional units of competency</h3>
-                        </legend>
+                    </div>
 
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="fab-checkbox-block" value="">
-                                <label class="au-control-input__text" for="fab-checkbox-block">Fabric surfaces</label>
-                        </div>
-                        
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="wood-checkbox-block" value="">
-                                <label class="au-control-input__text" for="wood-checkbox-block">Wooden structures</label>
-                        </div>
-                        
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="wood-checkbox-block" value="">
-                                <label class="au-control-input__text" for="wood-checkbox-block">Propellers</label>
-                        </div>
-                
-                    
-                    </fieldset>
-                    </div> 
-                    
-                    <div class="au-form-group">
+                    <div class="au-form-group casa-inline-form-group removal-no casa-hidden">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
-                                <h3 class="au-display-sm">Date competency requirements were met</h3>
+                                <h3 class="au-display-sm">Date theory requirements were met</h3>
                                 <span class="au-hint-text">For example, 31 01 2020</span>
                             </legend>
                             <div class="au-form-group casa-inline-form-subgroup">
@@ -180,37 +158,10 @@
                         </fieldset>
                     </div>
                     
-                                    <div class="au-callout removal-no casa-hidden">					
-					<h4>Practical maintenance experience</h4>
-<p>This student has completed <strong>3 years</strong> of experience on operating aircraft in <strong>B1.2</strong> subcategory (if initial licence, <strong>1 year</strong> has been accumulated immediately before making application)</p>
-					</div>
-                    
-                       <div class="au-form-group">
-                       <fieldset class="au-fieldset">
-                            <legend class="au-fieldset__legend">
-                                <h3 class="au-display-sm">Date practical maintenance experience requirements were met</h3>
-                                <span class="au-hint-text">For example, 31 01 2020</span>
-                            </legend>
-                            <div class="au-form-group casa-inline-form-subgroup">
-                                <label class="au-label" for="dd">Date</label>
-                                <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
-                           </div>
-                           <div class="au-form-group casa-inline-form-subgroup">
-                                <label class="au-label" for="mm">Month</label>
-                                <input type="text" class="au-text-input" id="mm" placeholder="MM"/>
-                           </div>
-                           <div class="au-form-group casa-inline-form-subgroup">
-                                <label class="au-label" for="yyyy">Year</label>
-                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
-                           </div>
+                <!-- form group for radio/checkboxes 
 
-
-                        </fieldset>
-                    </div>                 
-                    
-
-                    
-<div class="au-form-group">     
+                      
+<div class="au-form-group removal-no casa-hidden">     
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
                             <h3 class="au-display-sm">Is this report based on an Recognition of Prior Learning assesment of the students qualifications?</h3>
@@ -288,7 +239,9 @@
                 <!-- standard next button -->
 
    				      <div class="au-form-group">
-   				           <a class="au-btn" href="student-added-cat.html">Save student</a>
+   				           <div id="navigate" "navigate2">
+			    <a href="#" class="au-btn au-btn--primary">Next</a>          
+            </div>
 	              </div>
 
 
@@ -323,31 +276,10 @@
          </div>
       </main>
        <script>
-                      $("input[name=radio-ex1]").on("change", function () {
-        if ($(this).val() === "r-no") {
-            $(".removal-no").removeClass("casa-hidden");
-            $(".removal-yes").addClass("casa-hidden");
-             } else if($(this).val() === "r-yes") {
-                 $(".removal-no").addClass("casa-hidden");
-                 $(".removal-yes").removeClass("casa-hidden");
-             }
-           });   
-           
-       $("input[name=radio-ex-2]").on("change", function () {
-        if ($(this).val() === "t-yes") {
-            $(".theory-yes").removeClass("casa-hidden");
-             } else if($(this).val() === "t-no") {
-                 $(".theory-yes").addClass("casa-hidden");
-             }
-           });
-           
-           $("input[name=radio-ex]").on("change", function () {
-        if ($(this).val() === "rpl-yes") {
-            $(".yes").removeClass("casa-hidden");
-             } else if($(this).val() === "rpl-no") {
-                 $(".yes").addClass("casa-hidden");
-             }
-           });
+               $("#navigate a"). click(function(){
+				var radioValue = $("input[name='radio-ex1']:checked"). val();
+				window.location.href=radioValue+".html";
+			 }); 
        </script>
    </body>
 </html>

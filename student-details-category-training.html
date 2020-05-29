@@ -73,7 +73,15 @@
         <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
 
-                
+                                    <div class="au-callout">					
+					<h4>Course details</h4>
+<p>
+<strong>Course code:</strong> AA01<br>
+<strong>Course type identified:</strong> A1, category training   
+</p>
+					</div>
+                    
+                <h3>Student details</h3>
                 <!-- the step of the process on this page -->
 
                 <!-- content starts here
@@ -104,15 +112,11 @@
 
 
                   </fieldset>
-                  </div>-->
-<h3>Notification of training outcome for category or type</h3>
-                    
-<div class="au-callout">
-    <h3>Course code</h3>
-                  <p>This notification will cover one course code only, you can add multiple students to one course code. However, if you wish to submit multiple notifications for different course codes, you will need to complete the submission of one course before attempting to notify CASA of another.</p>
-</div>
+                  </div>
 
-                  <!-- form group for text and other input
+
+
+                  <!-- form group for text and other input -->
                   <div class="au-form-group">
                     <label class="au-label" for="name">Student family name</label>
                     <input type="text" class="au-text-input au-text-input--block" id="name">
@@ -121,12 +125,12 @@
                     <div class="au-form-group">
                     <label class="au-label" for="arn">Student aviation reference number</label>
                     <input type="text" class="au-text-input au-text-input--block" id="arn">
-                 </div>-->
+                 </div>
                     
-                    <div class="au-form-group">
+                    <!--<div class="au-form-group">
                     <label class="au-label" for="arn">Course code</label>
                     <input type="text" class="au-text-input au-text-input--block" id="course-code" value="">
-                 </div>
+                 </div>-->
                     
 
 
@@ -156,9 +160,9 @@
 
 
                 <!-- standard next button -->
-<div class="au-form-group" id="navigate">
+<div class="au-form-group">
 
-				<a class="au-btn" href="#">Next</a>
+				<a class="au-btn" href="category-training-details.html">Next</a>
 
 				</div>
 
@@ -194,21 +198,17 @@
             </div>
          </div>
       </main>
-       <script>
+       <!--<script>
        			  $("#navigate a").click(function(){
       var textValue = $("#course-code").val();
       if (textValue == "AA12T") {
-        window.location.href="student-details-theory.html";
+        window.location.href="theory-details.html";
       } else if (textValue == "AA30P"){
-        window.location.href="student-details-prac.html";
+        window.location.href="prac-details.html";
       } else if (textValue == "AA06"){
-        window.location.href="student-details-cat.html";
-    } else if (textValue == "AA01"){
-        window.location.href="student-details-category-training.html";      
-      } else if (textValue == "AA01TP"){
-        window.location.href="student-details-theory-and-prac.html";
+        window.location.href="cat-details.html";
       }                  
  });
-       </script>
+       </script>-->
    </body>
 </html>
