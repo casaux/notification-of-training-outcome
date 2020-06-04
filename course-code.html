@@ -58,12 +58,12 @@
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-org.html">myCASA</a></li>
-                     <li>Notification of Training Outcome</li>
+                     <li>Notification of training outcomes</li>
                   </ul>
                </nav>
 			  <div class="casa-section">
                <header class="au-header" role="banner">
-                  <h1 class="break desktop au-header-heading">Notification of Training Outcome</h1>
+                  <h1 class="break desktop au-header-heading">Notification of training outcomes</h1>
                   <a class="au-direction-link" href="javascript:history.back()">
 					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
 					</a>
@@ -105,7 +105,7 @@
 
                   </fieldset>
                   </div>-->
-<h3>Notification of training outcome for category or type</h3>
+<h3>Notification of training outcomes for category or type</h3>
                     
 <div class="au-callout">
     <h3>Course code</h3>
@@ -127,7 +127,7 @@
                     <label class="au-label" for="arn">Course code</label>
                     <input type="text" class="au-text-input au-text-input--block" id="course-code" value="">
                  </div>
-                    
+ 
 
 
                 <!-- content ends here -->
@@ -161,7 +161,10 @@
 				<a class="au-btn" href="#">Next</a>
 
 				</div>
-
+                 				               <hr />
+            <a href="#" class="au-btn au-btn--secondary">
+            Save and exit application
+            </a>  
 
 
                 <!-- standard payment button
@@ -199,13 +202,13 @@
       var textValue = $("#course-code").val();
       if (textValue == "AA12T") {
         window.location.href="student-details-theory.html";
-      } else if (textValue == "AA30P"){
+      } else if (textValue == "AA34P"){
         window.location.href="student-details-prac.html";
       } else if (textValue == "AA06"){
         window.location.href="student-details-cat.html";
     } else if (textValue == "AA01"){
         window.location.href="student-details-category-training.html";      
-      } else if (textValue == "AA01TP"){
+      } else if (textValue == "AHD001T/P"){
         window.location.href="student-details-theory-and-prac.html";
       }                  
  });
