@@ -17,6 +17,22 @@
 
       </script>
       <style type="text/css">
+
+
+      /*autocomplete
+
+      .autocomplete-suggestions {border: none; background: #FFFFFF; overflow: auto;}
+
+      .autocomplete-suggestion{padding:14px;background:#eee;}
+      .autocomplete-suggestion:nth-child(odd){background:#efefef;}*/
+
+      .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+      .autocomplete-suggestion { padding: 4px 5px 2px 16px; white-space: nowrap; overflow: hidden; }
+      .autocomplete-selected { background: #F0F0F0; }
+      .autocomplete-suggestions strong { font-weight: bold;  }
+      .autocomplete-group { padding: 2px 5px; }
+      .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
       </style>
 
 </head>
@@ -73,15 +89,15 @@
         <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
                     <h3>Notification of training outcomes for category or type</h3>
-                    
+
 <div class="au-callout">
     <h3>Course code</h3>
                   <p>This notification will cover one course code only, you can add multiple students to one course code. However, if you wish to submit multiple notifications for different course codes, you will need to complete the submission of one course before attempting to notify CASA of another.</p>
 </div>
-                    
-        <div class="au-form-group">             
+
+        <div class="au-form-group">
         <label class="au-label" for="arn">Course code</label>
-        <div class="autocomplete-suggestions">    
+        <div class="autocomplete-suggestions">
             <input type="text" class="au-text-input au-text-input--block" name="country" id="autocomplete-ajax"/>
         </div>
         </div>
@@ -92,7 +108,7 @@
     <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
     <script type="text/javascript" src="js/courses.js"></script>
     <script type="text/javascript" src="js/demo.js"></script>
-                    
+
                     <div class="au-form-group" id="navigate">
 
 				<a class="au-btn" href="#">Next</a>
@@ -101,12 +117,12 @@
                  				               <hr />
             <a href="#" class="au-btn au-btn--secondary">
             Save and exit application
-            </a>  
+            </a>
                                 </div>
 			 </div>
 			 </div>
 		  </div>
-                    
+
                               <div class="footer">
 
             <div class="footer-wrapper">
@@ -124,11 +140,11 @@
       } else if (textValue == "AA06"){
         window.location.href="student-details-cat.html";
     } else if (textValue == "AA01"){
-        window.location.href="student-details-category-training.html";      
+        window.location.href="student-details-category-training.html";
       } else if (textValue == "AHD001T/P"){
         window.location.href="student-details-theory-and-prac.html";
-      }                  
+      }
  });
-       </script>               
+       </script>
 </body>
 </html>
