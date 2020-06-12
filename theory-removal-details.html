@@ -17,24 +17,7 @@
 
 
       </script>
-            <style type="text/css">
-
-
-      /*autocomplete
-
-      .autocomplete-suggestions {border: none; background: #FFFFFF; overflow: auto;}
-
-      .autocomplete-suggestion{padding:14px;background:#eee;}
-      .autocomplete-suggestion:nth-child(odd){background:#efefef;}*/
-
-      .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
-      .autocomplete-suggestion { padding: 4px 5px 2px 16px; white-space: nowrap; overflow: hidden; }
-      .autocomplete-selected { background: #F0F0F0; }
-      .autocomplete-suggestions strong { font-weight: bold;  }
-      .autocomplete-group { padding: 2px 5px; }
-      .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
-
-      </style>
+      <style type="text/css">
       </style>
    </head>
    <body class="live-demo au-body au-grid">
@@ -75,12 +58,12 @@
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-org.html">myCASA</a></li>
-                     <li>Notification of training outcomes</li>
+                     <li>Notification of training outcome</li>
                   </ul>
                </nav>
 			  <div class="casa-section">
                <header class="au-header" role="banner">
-                  <h1 class="break desktop au-header-heading">Notification of training outcomes</h1>
+                  <h1 class="break desktop au-header-heading">Notification of training outcome</h1>
                   <a class="au-direction-link" href="javascript:history.back()">
 					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
 					</a>
@@ -98,13 +81,16 @@
 					<h4>Student details</h4>
 <p><strong>Name:</strong> Clare White<br>
 <strong>ARN:</strong> 1736904<br>
-<strong>Removal of exclusion:</strong> Type</p>
+<strong>Removal of exclusion:</strong> Type<br>
+<strong>Course code:</strong> AA39T<br>    
+<strong>Course identified:</strong> Agusta AB139/AW139 (PWC PT6) E1 E4 E5 exclusion removal  
+</p>
 					</div>
 
                 <!--<p>More general information</p>-->
-<h3>Type removal details</h3>
-
-                                                            <!--<div class="au-form-group">
+<h3>Course details</h3>
+                    
+                                        <!--<div class="au-form-group">
                   <fieldset class="au-fieldset">
                       <legend class="au-fieldset__legend">
                           <h3 class="au-display-sm">Is this a notification for a removal of exclusions/limitations?</h3>
@@ -123,63 +109,9 @@
 
 
                   </fieldset>
-                  </div>
+                  </div>-->
                     
-                                                            <div class="au-form-group casa-inline-form-group removal-yes casa-hidden">
-                       <fieldset class="au-fieldset">
-                            <legend class="au-fieldset__legend">
-                                <h3 class="au-display-sm">Date requirements were met</h3>
-                                <span class="au-hint-text">For example, 31 01 2020</span>
-                            </legend>
-                            <div class="au-form-group casa-inline-form-subgroup">
-                                <label class="au-label" for="dd">Date</label>
-                                <input type="text" class="au-text-input" id="dd" placeholder="DD"/>
-                           </div>
-                           <div class="au-form-group casa-inline-form-subgroup">
-                                <label class="au-label" for="mm">Month</label>
-                                <input type="text" class="au-text-input" id="mm" placeholder="MM"/>
-                           </div>
-                           <div class="au-form-group casa-inline-form-subgroup">
-                                <label class="au-label" for="yyyy">Year</label>
-                                <input type="text" class="au-text-input" id="yyyy" placeholder="YYYY"/>
-                           </div>
-
-
-                        </fieldset>
-                    </div>-->
-                    
-                   
-                    
-                <!-- form group for radio/checkboxes -->
-
-   <!--<div class="au-form-group removal-no casa-hidden">     
-                    <fieldset class="au-fieldset">
-                        <legend class="au-fieldset__legend">
-                            <h3 class="au-display-sm">Did this student also complete a theory course?</h3>
-                        </legend>
-
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="radio-ex-2" id="theory-yes-radio-block" value="t-yes">
-                                <label class="au-control-input__text" for="theory-yes-radio-block">Yes</label>
-                        </div>
-                        
-                        <div class="au-control-input au-control-input--block">
-                            <input class="au-control-input__input" type="radio" name="radio-ex-2" id="theory-no-radio-block" value="t-no">
-                                <label class="au-control-input__text" for="theory-no-radio-block">No</label>
-                        </div>
-
-
-                        
-                    </fieldset>
-                    </div> 
-                    
-                    
-                    <div class="au-form-group theory-yes casa-hidden">
-                    <label class="au-label" for="course-code">Theory course code</label>
-                    <input type="text" class="au-text-input au-text-input--block" id="course-code">
-                 </div>
-                    
-                    <div class="au-form-group casa-inline-form-group theory-yes casa-hidden">
+                                        <div class="au-form-group">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
                                 <h3 class="au-display-sm">Date theory requirements were met</h3>
@@ -200,22 +132,42 @@
 
 
                         </fieldset>
-                    </div>-->
-                                      
-        <div class="au-form-group">
-        <label class="au-label" for="arn">Course code</label>
-        <div class="autocomplete-suggestions">
-            <input type="text" class="au-text-input au-text-input--block" name="country" id="autocomplete-ajax"/>
-        </div>
-        </div>
-         
-                   <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mockjax.js"></script>
-    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
-    <script type="text/javascript" src="js/courses.js"></script>
-    <script type="text/javascript" src="js/demo.js"></script>     
+                    </div>
+
+
+                <!-- form group for radio/checkboxes
+                    <div class="au-form-group">     
+                    <fieldset class="au-fieldset">
+                        <legend class="au-fieldset__legend">
+                            <h3 class="au-display-sm">Category</h3>
+                            <span class="au-hint-text">You may select more than one</span>
+                        </legend>
+
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="b1.1-checkbox-block" value="">
+                                <label class="au-control-input__text" for="b1.1-checkbox-block">B1.1</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="b1.3-checkbox-block" value="">
+                                <label class="au-control-input__text" for="b1.3-checkbox-block">B1.3</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="b2-checkbox-block" value="">
+                                <label class="au-control-input__text" for="b2-checkbox-block">B2</label>
+                        </div>
+                        
+                        <div class="au-control-input au-control-input--block">
+                            <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="c-checkbox-block" value="">
+                                <label class="au-control-input__text" for="c-checkbox-block">C</label>
+                        </div>
+                
                     
-<!--<div class="au-form-group">     
+                    </fieldset>
+                    </div> -->
+                      
+<div class="au-form-group">     
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
                             <h3 class="au-display-sm">Is this report based on an Recognition of Prior Learning assesment of the students qualifications?</h3>
@@ -234,7 +186,7 @@
 
                         
                     </fieldset>
-                    </div>
+                    </div> 
 
 
 
@@ -292,8 +244,8 @@
 
                 <!-- standard next button -->
 
-   				      <div class="au-form-group" id="navigate">
-   				           <a class="au-btn" href="#">Next</a>
+   				      <div class="au-form-group">
+   				           <a class="au-btn" href="student-added-theory-type-removal.html">Save student</a>
 	              </div>
                                      				               <hr />
             <a href="#" class="au-btn au-btn--secondary">
@@ -331,21 +283,13 @@
          </div>
       </main>
        <script>
-                      $("input[name=radio-ex1]").on("change", function () {
+              $("input[name=radio-ex1]").on("change", function () {
         if ($(this).val() === "r-no") {
             $(".removal-no").removeClass("casa-hidden");
             $(".removal-yes").addClass("casa-hidden");
              } else if($(this).val() === "r-yes") {
                  $(".removal-no").addClass("casa-hidden");
                  $(".removal-yes").removeClass("casa-hidden");
-             }
-           });   
-           
-       $("input[name=radio-ex-2]").on("change", function () {
-        if ($(this).val() === "t-yes") {
-            $(".theory-yes").removeClass("casa-hidden");
-             } else if($(this).val() === "t-no") {
-                 $(".theory-yes").addClass("casa-hidden");
              }
            });
            
@@ -356,18 +300,6 @@
                  $(".yes").addClass("casa-hidden");
              }
            });
-           
-                  			  $("#navigate a").click(function(){
-      var textValue = $("#autocomplete-ajax").val();
-      if (textValue == "AA30P") {
-        window.location.href="prac-removal-details.html";
-      } else if (textValue == "AA39T"){
-        window.location.href="theory-removal-details.html";
-      } else if (textValue == "QF113T/P"){
-        window.location.href="theory-and-prac-removal-details.html";
-      }
- });
-           
        </script>
    </body>
 </html>
