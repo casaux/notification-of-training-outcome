@@ -73,11 +73,11 @@
         <div class="row">
                	<div class="col-xs-12 col-md-12 col-lg-6">
 
-                
+
                 <!-- the step of the process on this page -->
 
-                
-                <div class="au-callout">					
+
+                <div class="au-callout">
 					<h4>Student details</h4>
 <p><strong>Name:</strong> Clare White<br>
 <strong>ARN:</strong> 1736904<br>
@@ -108,7 +108,7 @@
 
                   </fieldset>
                   </div>-->
-                    
+
                                                             <div class="au-form-group">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
@@ -131,7 +131,7 @@
 
                         </fieldset>
                     </div>
-                    
+
                     <div class="au-form-group">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
@@ -154,8 +154,8 @@
 
                         </fieldset>
                     </div>
-                    
-                    <!--<div class="au-form-group removal-no casa-hidden">     
+
+                    <!--<div class="au-form-group removal-no casa-hidden">
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
                             <h3 class="au-display-sm">Optional units of competency</h3>
@@ -165,16 +165,16 @@
                             <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="fab-checkbox-block" value="">
                                 <label class="au-control-input__text" for="fab-checkbox-block">Fabric surfaces</label>
                         </div>
-                        
+
                         <div class="au-control-input au-control-input--block">
                             <input class="au-control-input__input" type="checkbox" name="checkbox-ex-1" id="wood-checkbox-block" value="">
                                 <label class="au-control-input__text" for="wood-checkbox-block">Wooden structures</label>
                         </div>
-                
-                    
+
+
                     </fieldset>
-                    </div> 
-                    
+                    </div>
+
                     <div class="au-form-group casa-inline-form-group removal-no casa-hidden">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
@@ -197,12 +197,12 @@
 
                         </fieldset>
                     </div>
-                    
-                                    <div class="au-callout removal-no casa-hidden">					
+
+                                    <div class="au-callout removal-no casa-hidden">
 					<h4>Practical maintenance experience</h4>
 <p>This student has completed <strong>3 years</strong> of experience on operating aircraft in <strong>B1.2</strong> subcategory (if initial licence, <strong>1 year</strong> has been accumulated immediately before making application)</p>
 					</div>
-                    
+
                        <div class="au-form-group casa-inline-form-group removal-no casa-hidden">
                        <fieldset class="au-fieldset">
                             <legend class="au-fieldset__legend">
@@ -224,11 +224,11 @@
 
 
                         </fieldset>
-                    </div>  -->               
-                    
+                    </div>  -->
 
-                    
-<div class="au-form-group">     
+
+
+<div class="au-form-group">
                     <fieldset class="au-fieldset">
                         <legend class="au-fieldset__legend">
                             <h3 class="au-display-sm">Is this report based on a Recognition of Prior Learning assessment of the student's qualifications?</h3>
@@ -238,21 +238,28 @@
                             <input class="au-control-input__input" type="radio" name="radio-ex" id="yes-radio-block" value="rpl-yes">
                                 <label class="au-control-input__text" for="yes-radio-block">Yes</label>
                         </div>
-                        
+
                         <div class="au-control-input au-control-input--block">
                             <input class="au-control-input__input" type="radio" name="radio-ex" id="no-radio-block" value="rpl-no">
                                 <label class="au-control-input__text" for="no-radio-block">No</label>
                         </div>
 
 
-                        
+
                     </fieldset>
-                    </div> 
+                    </div>
 
 
 
-                    
+
                     <div class="au-form-group yes casa-hidden">
+
+                      <div class="au-callout">
+                         <p><strong>Please note</strong></p>
+                         <p>Notifications with attachments cannot be saved and completed later.</p>
+
+                      </div>
+
 			<h3 class="au-display-sm">Upload evidence of student's qualifications</h3>
 			<br>
 			<button class="au-btn au-btn--secondary" type="button">Choose file</button><br>
@@ -260,17 +267,20 @@
 		 </div>
 
 
+
+
+
                   <!-- form group for text and other input
                   <div class="au-form-group">
                     <label class="au-label" for="name">User family name</label>
                     <input type="text" class="au-text-input au-text-input--block" id="name">
                  </div>
-                    
+
                     <div class="au-form-group">
                     <label class="au-label" for="arn">User aviation reference number</label>
                     <input type="text" class="au-text-input au-text-input--block" id="arn">
                  </div>
-                    
+
                     <div class="au-form-group">
                     <label class="au-label" for="course-code">Course code</label>
                     <input type="text" class="au-text-input au-text-input--block" id="course-code">
@@ -280,7 +290,7 @@
 
                 <!--content ends here -->
 
-                <!-- declaration  button 
+                <!-- declaration  button
 
                 <div class="au-callout casa-declaration">
                    		<h3>Declaration</h3>
@@ -352,8 +362,8 @@
                  $(".removal-no").addClass("casa-hidden");
                  $(".removal-yes").removeClass("casa-hidden");
              }
-           });   
-           
+           });
+
        $("input[name=radio-ex-2]").on("change", function () {
         if ($(this).val() === "t-yes") {
             $(".theory-yes").removeClass("casa-hidden");
@@ -361,7 +371,7 @@
                  $(".theory-yes").addClass("casa-hidden");
              }
            });
-           
+
            $("input[name=radio-ex]").on("change", function () {
         if ($(this).val() === "rpl-yes") {
             $(".yes").removeClass("casa-hidden");
